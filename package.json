@@ -1,7 +1,7 @@
 {
   "name": "nestjs-graphql-loader",
   "version": "0.0.0",
-  "description": "NestJS Graphql dataloader",
+  "description": "Dataloader decodators for NestJS Graphql",
   "author": "Alexey Panfilkin (soild@mail.ru)",
   "private": false,
   "license": "GNU GPLv3",
