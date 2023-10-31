@@ -1,10 +1,11 @@
 {
-  "name": "nestjs-graphql-dataloader",
+  "name": "@nestjs/graphql-dataloader",
   "version": "0.0.1",
   "description": "NestJS Graphql dataloader",
   "author": "Alexey Panfilkin (soild@mail.ru)",
   "private": false,
   "license": "GNU GPLv3",
+  "main": "dist-lib/index.js",
   "scripts": {
     "build": "npm run cleanup && tsc -p lib.tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -17,7 +18,9 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "release": "npm run build && release-it",
+    "cleanup": "rm lib.tsconfig.tsbuildinfo || true && rm -rf dist-lib || true"
   },
   "dependencies": {
     "dataloader": "^2.2.2"
