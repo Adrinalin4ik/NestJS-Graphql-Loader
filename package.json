@@ -1,6 +1,6 @@
 {
   "name": "nestjs-graphql-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Dataloader decodators for NestJS Graphql",
   "author": "Alexey Panfilkin (soild@mail.ru)",
   "private": false,
